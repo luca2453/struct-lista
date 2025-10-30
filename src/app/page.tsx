@@ -1,53 +1,41 @@
-import Link from "next/link";
-
-import { LatestPost } from "~/app/_components/post";
-import { api, HydrateClient } from "~/trpc/server";
-
-export default async function Home() {
-  const hello = await api.post.hello({ text: "from tRPC" });
-
-  void api.post.getLatest.prefetch();
-
+export default function HomePage() {
   return (
-    <HydrateClient>
-      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-        <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-          <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
-            Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
-          </h1>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-            <Link
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 hover:bg-white/20"
-              href="https://create.t3.gg/en/usage/first-steps"
-              target="_blank"
-            >
-              <h3 className="text-2xl font-bold">First Steps →</h3>
-              <div className="text-lg">
-                Just the basics - Everything you need to know to set up your
-                database and authentication.
-              </div>
-            </Link>
-            <Link
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 hover:bg-white/20"
-              href="https://create.t3.gg/en/introduction"
-              target="_blank"
-            >
-              <h3 className="text-2xl font-bold">Documentation →</h3>
-              <div className="text-lg">
-                Learn more about Create T3 App, the libraries it uses, and how
-                to deploy it.
-              </div>
-            </Link>
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <p className="text-2xl text-white">
-              {hello ? hello.greeting : "Loading tRPC query..."}
-            </p>
-          </div>
-
-          <LatestPost />
+    <main>
+      {/* Navbar is rendered globally in layout.tsx */}
+      <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[var(--steam-dark)] to-[var(--steam-mid)]">
+        <div className="max-w-3xl text-center px-6">
+          <h1 className="text-4xl font-extrabold steam-accent">SteamReviews</h1>
+          <p className="mt-4 steam-text">Uma plataforma estilo Steam focada em reviews de jogos — descubra opiniões, avaliações e destaques.</p>
         </div>
-      </main>
-    </HydrateClient>
+      </section>
+
+      <section id="reviews" className="min-h-screen py-16 bg-[var(--steam-bg)]">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="text-3xl font-bold steam-accent">Reviews</h2>
+          <p className="mt-3 steam-text">Aqui ficarão os reviews mais recentes e populares.</p>
+        </div>
+      </section>
+
+      <section id="categories" className="min-h-screen py-16 bg-[var(--steam-mid)]">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="text-3xl font-bold steam-accent">Categorias</h2>
+          <p className="mt-3 steam-text">Navegue por gêneros e tags para encontrar reviews do seu interesse.</p>
+        </div>
+      </section>
+
+      <section id="about" className="min-h-screen py-16 bg-[var(--steam-bg)]">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="text-3xl font-bold steam-accent">Sobre</h2>
+          <p className="mt-3 steam-text">Sobre o projeto SteamReviews e a missão por trás da plataforma.</p>
+        </div>
+      </section>
+
+      <section id="contact" className="min-h-screen py-16 bg-[var(--steam-mid)]">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="text-3xl font-bold steam-accent">Contato</h2>
+          <p className="mt-3 steam-text">Formas de contato e links relevantes.</p>
+        </div>
+      </section>
+    </main>
   );
 }
