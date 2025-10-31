@@ -8,10 +8,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="reviews" className="min-h-screen py-16 bg-[var(--steam-bg)]">
+      <section id="about" className="min-h-screen py-16 bg-[var(--steam-dark)]">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl font-bold steam-accent">Reviews</h2>
-          <p className="mt-3 steam-text">Aqui ficarão os reviews mais recentes e populares.</p>
+          <h2 className="text-3xl font-bold steam-accent">Sobre</h2>
+          <p className="mt-3 steam-text">Sobre o projeto SteamReviews e a missão por trás da plataforma.</p>
         </div>
       </section>
 
@@ -22,17 +22,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="about" className="min-h-screen py-16 bg-[var(--steam-bg)]">
+      <section id="reviews" className="min-h-screen py-16 bg-[var(--steam-dark)]">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl font-bold steam-accent">Sobre</h2>
-          <p className="mt-3 steam-text">Sobre o projeto SteamReviews e a missão por trás da plataforma.</p>
-        </div>
-      </section>
-
-      <section id="contact" className="min-h-screen py-16 bg-[var(--steam-mid)]">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl font-bold steam-accent">Contato</h2>
-          <p className="mt-3 steam-text">Formas de contato e links relevantes.</p>
+          <h2 className="text-3xl font-bold steam-accent">Reviews</h2>
+          <p className="mt-3 steam-text">Aqui ficarão os reviews mais recentes e populares.</p>
         </div>
       </section>
     </main>
