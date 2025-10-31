@@ -1,3 +1,6 @@
+// A Navbar foi feita por Luca
+// Ela contém links de navegação para as seções da homepage e é responsiva para desktop e mobile
+
 "use client";
 
 import Link from "next/link";
