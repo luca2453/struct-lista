@@ -1,4 +1,7 @@
 export default function HomePage() {
+  //parte feita por Pedro
+  
+  //essa é a categoria dos jogos que aparecem na pagina inicial.
   const categories = [
     { id: 'acao', label: 'Ação', description: 'Jogos com ritmo acelerado e combates intensos.' },
     { id: 'aventura', label: 'Aventura', description: 'Exploração, narrativa e descoberta.' },
@@ -6,8 +9,8 @@ export default function HomePage() {
     { id: 'esporte', label: 'Esporte', description: 'Competição, simulações e partidas multiplayer.' },
     { id: 'kids', label: 'Kids', description: 'Jogos leves e apropriados para todas as idades.' },
     { id: 'terror', label: 'Terror', description: 'Atmosfera tensa, sustos e suspense.' },
-  ];
-
+  ]; 
+// nessa parte mostra os kard dos jogos com as reviews
   const reviews = [
     {
       id: 'rev1',
@@ -42,6 +45,7 @@ export default function HomePage() {
   };
 
   return (
+    //nesta parte fala sobre o site.
     <main>
       <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[var(--steam-dark)] to-[var(--steam-mid)]">
         <div className="max-w-3xl text-center px-6">
