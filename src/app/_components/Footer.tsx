@@ -1,5 +1,9 @@
 export default function Footer() {
   return (
+
+    // O Footer foi feito por Luca
+
+    // Ele contém seções de navegação e contato, além de direitos autorais
   <footer className="w-full steam-bg-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row md:justify-between items-start gap-6">
