@@ -27,10 +27,9 @@ export function Navbar() {
   // apontar para âncoras na homepage (id="home", "reviews", ...)
   const links = [
     { href: "/#home", label: "Home" },
-    { href: "/#reviews", label: "Reviews" },
-    { href: "/#categories", label: "Categorias" },
     { href: "/#about", label: "Sobre" },
-    { href: "/#contact", label: "Contato" },
+    { href: "/#categories", label: "Categorias" },
+    { href: "/#reviews", label: "Reviews" },
   ];
 
   return (
