@@ -24,8 +24,8 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a className="steam-link" href="/#reviews">
-                    Reviews
+                  <a className="steam-link" href="/#about">
+                    Sobre
                   </a>
                 </li>
                 <li>
@@ -33,6 +33,12 @@ export default function Footer() {
                     Categorias
                   </a>
                 </li>
+                <li>
+                  <a className="steam-link" href="/#reviews">
+                    Reviews
+                  </a>
+                </li>
+                
               </ul>
             </div>
 
